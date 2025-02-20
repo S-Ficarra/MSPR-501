@@ -60,7 +60,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: s5t4v5
     ports:
-      - "8080:80"
+      - "10080:80"
     depends_on:
       postgres:
         condition: service_healthy
