@@ -43,11 +43,11 @@ Exemple de réponse pour POST /region :
 
 """
 
-from flask import Blueprint, jsonify, request
-from flask_jwt_extended import jwt_required
-from flask_restx import Namespace, Resource, fields
-import psycopg2.extras
-from flask_restx import reqparse
+from flask import Blueprint, jsonify, request       # type: ignore
+from flask_jwt_extended import jwt_required         # type: ignore
+from flask_restx import Namespace, Resource, fields # type: ignore
+import psycopg2.extras                              # type: ignore
+from flask_restx import reqparse                    # type: ignore
 from connect_db import DBConnection
 
 

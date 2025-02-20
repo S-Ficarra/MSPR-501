@@ -5,10 +5,10 @@ Ce module définit plusieurs routes pour créer, récupérer, mettre à jour et 
 dans une base de données PostgreSQL.
 """
 
-from flask import Blueprint, request
-from flask_restx import Namespace, Resource, fields
-from flask_jwt_extended import jwt_required
-import psycopg2.extras
+from flask import Blueprint, request                    # type: ignore
+from flask_restx import Namespace, Resource, fields     # type: ignore
+from flask_jwt_extended import jwt_required             # type: ignore
+import psycopg2.extras                                  # type: ignore
 from connect_db import DBConnection
 
 

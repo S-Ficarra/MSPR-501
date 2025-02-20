@@ -15,7 +15,7 @@ Configuration requise :
 
 """
 
-import psycopg2
+import psycopg2  # type: ignore
 
 
 DATABASE = {

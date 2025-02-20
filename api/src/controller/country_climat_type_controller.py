@@ -9,10 +9,10 @@ Dépendances :
 - psycopg2 (pour la connexion à la base de données PostgreSQL)
 """
 
-from flask import Blueprint, jsonify, request
-from flask_restx import Resource, fields, Namespace
-from flask_jwt_extended import jwt_required
-import psycopg2.extras
+from flask import Blueprint, jsonify, request       # type: ignore
+from flask_restx import Resource, fields, Namespace # type: ignore
+from flask_jwt_extended import jwt_required         # type: ignore
+import psycopg2.extras                              # type: ignore
 from connect_db import DBConnection
 
 # Définition du Blueprint et du Namespace

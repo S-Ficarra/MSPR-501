@@ -5,10 +5,10 @@ Ce module permet de récupérer, créer, mettre à jour et supprimer des stateme
 dans la base de données à travers des routes API.
 """
 
-from flask import Blueprint, jsonify, request
-from flask_restx import Namespace, Resource, fields
-from flask_jwt_extended import jwt_required
-import psycopg2.extras
+from flask import Blueprint, jsonify, request       # type: ignore
+from flask_restx import Namespace, Resource, fields # type: ignore
+from flask_jwt_extended import jwt_required         # type: ignore
+import psycopg2.extras                              # type: ignore
 from connect_db import DBConnection
 
 

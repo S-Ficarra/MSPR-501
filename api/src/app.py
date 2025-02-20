@@ -1,8 +1,8 @@
 import sys
-import bcrypt
-from flask import Flask, request, jsonify
-from flask_restx import Api
-from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
+import bcrypt                                                                                   # type: ignore
+from flask import Flask, request, jsonify                                                       # type: ignore
+from flask_restx import Api                                                                     # type: ignore
+from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity  # type: ignore
 from controller import climat_type_controller, continent_controller, country_climat_type_controller
 from controller import country_controller, disease_controller, region_controller, statement_controller
 from controller import login_controller

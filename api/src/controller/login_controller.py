@@ -1,9 +1,9 @@
-from flask import request
-from flask_restx import Namespace, Resource, fields
-from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
-from flask import jsonify
+from flask import request                                                           # type: ignore
+from flask_restx import Namespace, Resource, fields                                 # type: ignore
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity  # type: ignore
+from flask import jsonify                                                           # type: ignore
 from connect_db import DBConnection
-import bcrypt
+import bcrypt                                                                       # type: ignore
 
 
 auth_namespace = Namespace('auth', description="Authentification des utilisateurs")
