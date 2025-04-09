@@ -34,7 +34,7 @@ print("|_|  |_|_____/|_|    |_|  \_\ |____/ \___/ |_|")
 print("\n\n")
 
 print("\n\n ========== Début de la récupération des datas brutes ========== ")
-get_brut_data()
+# get_brut_data()
 
 print("\n\n ========== Insertion des données dans disease ========== ")
 set_disease()
@@ -45,8 +45,8 @@ set_data_immutable()
 print("\n\n ========== Nettoyage et insertion des données dans statement ========== ")
 clean_data()
 
-print("\n\n ========== Suppression des datasets ========== ")
-drop_dataset()
+# print("\n\n ========== Suppression des datasets ========== ")
+# drop_dataset()
 
 print("======================================================================================")
 print("======================================================================================")
