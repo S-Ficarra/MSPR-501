@@ -50,8 +50,11 @@ def clean_covid():
     countries_columns = ["id_country", "iso_code"]
     countries_df = spark.createDataFrame(countries_data, countries_columns)
 
-    # Ajout code pays
-    df = df.withColumnRenamed("Country_code", "iso_code")
+    @udf(StringType())
+    def get_country_code_udf(country_name):
+        return get_country_code(country_name) if country_name else None
+
+    df = df.withColumn("iso_code", get_country_code_udf(col("`Country`")))
 
     df = df.join(
         countries_df,
